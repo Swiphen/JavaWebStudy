@@ -16,4 +16,16 @@
         <!--请求路径-->
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+
+    <!--404-->
+
+    <servlet>
+        <servlet-name>error</servlet-name>
+        <servlet-class>com.feng.ErrorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>error</servlet-name>
+        <!--请求路径-->
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
 </web-app>
